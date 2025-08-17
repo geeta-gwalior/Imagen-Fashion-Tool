@@ -3,22 +3,7 @@ import vertexai
 from vertexai.preview.vision_models import ImageGenerationModel, Image
 from vertexai.generative_models import GenerativeModel
 
-# TODO: Replace with your Google Cloud project ID and location
-PROJECT_ID = "cloud_project"
-LOCATION = "us-central1"
 
-# Initialize Vertex AI
-@st.cache_resource
-def initialize_vertex_ai():
-    vertexai.init(project=PROJECT_ID, location=LOCATION)
-
-# Load the Imagen 4 model
-@st.cache_resource
-def load_model():
-    return ImageGenerationModel.from_pretrained("imagen-4.0-generate-001")
-
-initialize_vertex_ai()
-model = load_model()
 
 # Set up session state for the gallery
 if "gallery" not in st.session_state:
