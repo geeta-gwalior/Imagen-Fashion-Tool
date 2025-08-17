@@ -30,4 +30,4 @@ Background Scene (e.g., Indian palace, a city street)
 
 Functionality: The user's selections are programmatically combined into a detailed prompt that is sent to the Imagen 4 model. The app can generate multiple images at once and includes a gallery feature to save and organize favorite designs, creating a digital portfolio.
 
-Project Value
+
