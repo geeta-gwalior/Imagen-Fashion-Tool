@@ -3,15 +3,7 @@ import vertexai
 from vertexai.preview.vision_models import ImageGenerationModel, Image
 from vertexai.generative_models import GenerativeModel
 
-# TODO: Replace with your Google Cloud project ID and location
-PROJECT_ID = ""
-LOCATION = "us-central1"
 
-# Initialize Vertex AI
-vertexai.init(project=PROJECT_ID, location=LOCATION)
-
-# Load the Imagen 4 model
-model = ImageGenerationModel.from_pretrained("imagen-4.0-generate-001")
 
 # Set up the Streamlit page
 st.title("Fashion Design Visualizer with Imagen 4")
