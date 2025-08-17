@@ -4,7 +4,7 @@ from vertexai.preview.vision_models import ImageGenerationModel, Image
 from vertexai.generative_models import GenerativeModel
 
 # TODO: Replace with your Google Cloud project ID and location
-PROJECT_ID = "gemmaagent-462506"
+PROJECT_ID = ""
 LOCATION = "us-central1"
 
 # Initialize Vertex AI
